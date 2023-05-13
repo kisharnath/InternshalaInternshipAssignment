@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab:wght@400;700;900&family=Roboto:wght@100&family=Source+Sans+Pro:ital,wght@1,200&family=Titillium+Web:wght@200;300&display=swap');
+
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family:Playfair Display;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  margin-left: 20px;
+  margin-top: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.first{
+  margin-top: 30px;
+  animation: i 0.75s;
+  margin-right: 20px;
+ 
+}
+.heading{
+  font-size: 35px;
+}
+.para{
+  font-size: 21px;
+  width: 100%;
+  margin-top: 15px;
+}
+.secondpara{
+  display: none;
+}
+.footer{
+  margin-top: 5px;
+  font-weight: 700;
+
+  font-size: 20px;
+}
+.footer a{
+  color: rgb(18, 175, 218);
+}
+.footer a:hover{
+  color:gray
+}
+@keyframes i {
+  from{
+    margin-top: 200px;
+  }
+  to{
+    margin-top: 2px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.img{
+  height: 100%;
+  width: 100%;
+  margin-right: 20px;
+  object-fit: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.arrow{
+  margin-left: 10px;
+  font-size: 25px;
+}
+.arrow:hover{
+animation: w 0.5s ease-in-out forwards;
+color: gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @keyframes w {
+    from{
+      margin-left: 30px;
+    }
+    to{
+      margin-left: 10px;
+    }
   }
-  to {
-    transform: rotate(360deg);
+
+  .get{
+    margin-top: 20px;
+margin-left: 5px;
+border:1px solid black;
+padding: 15px 40px;
+margin-bottom: 40px;
+background-color: black;
+color: white;
+  }
+  .get:hover{
+    background-color: white;
+    color: black;
+  }
+@media screen and (min-width: 800px) {
+  /* CSS rules */
+  .heads{
+    font-size: 3rem;
+  }
+  .first{
+    /* margin: 1rem auto; */
+    margin-right: 100px;
+  }
+  .Main{
+    display: flex;
+    line-height: 1;
+    margin-right: 2px;
+  }
+  .mainhead{
+    margin-left: 310px;
+  }
+  .heading{
+    width: 300px;
+  }
+  .para{
+    display: none;
+  }
+  .secondpara{
+    display: inline;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .footer{
+    color: black;
+  }
+  .first{
+    animation: i 0.75s;
+     margin-left: 313px;
+  }
+
+
+  @keyframes i {
+    from{
+      margin-top: 200px;
+    }
+    to{
+      margin-top: 2px;
+    }
+  }
+
+  .img{
+    margin-left: 100px;
+    width: 400px;
+    height: 300px;
+    
+    object-fit: cover;
+  }
+  .footer a{
+    color:black
+  }
+  .get{
+    margin-top: 20px;
+margin-left: 310px;
+border:1px solid black;
+padding: 15px 40px;
+margin-bottom: 40px;
+background-color: black;
+color: white;
+  }
+
+  .get:hover{
+    background-color: white;
+    color: black;
   }
 }
